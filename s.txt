@@ -1,0 +1,277 @@
+local ScreenGui = Instance.new("ScreenGui")
+local ImageButton = Instance.new("ImageButton")
+local UICorner = Instance.new("UICorner")
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+ImageButton.Parent = ScreenGui
+ImageButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton.BorderSizePixel = 0
+ImageButton.Position = UDim2.new(0.10615778, 0, 0.16217947, 0)
+ImageButton.Size = UDim2.new(0, 40, 0, 40)
+ImageButton.Draggable = true
+ImageButton.Image = "http://www.roblox.com/asset/?id=104274675849507"
+
+UICorner.CornerRadius = UDim.new(1, 10) 
+UICorner.Parent = ImageButton
+
+ImageButton.MouseButton1Down:Connect(function()
+    game:GetService("VirtualInputManager"):SendKeyEvent(true, Enum.KeyCode.End, false, game)
+end)
+
+local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
+repeat wait() until game:IsLoaded()
+local Window = Fluent:CreateWindow({
+    Title = "MIMI Tổng Hợp",
+    SubTitle = "Blox Fruit",
+    TabWidth = 157,
+    Size = UDim2.fromOffset(555, 320),
+    Acrylic = true,
+    Theme = "Amethyst",
+    MinimizeKey = Enum.KeyCode.End
+})
+local Tabs = {
+        Main0=Window:AddTab({ Title="Thông Tin" }),
+        Main1=Window:AddTab({ Title="Script Farm" }),
+        Main2=Window:AddTab({ Title="Farm Fruit" }),
+        Main3=Window:AddTab({ Title="Farm Chest" }),
+        Main4=Window:AddTab({ Title="Script Hop" }),
+       Main5=Window:AddTab({ Title="SCRIPT fix lag" }),
+          Main6=Window:AddTab({ Title="cập nhật" }),
+}
+    Tabs.Main0:AddButton({
+    Title = "chưa có discord",
+    Description = " ",
+    Callback = function()
+        setclipboard(" ")
+    end
+})
+
+    Tabs.Main0:AddButton({
+    Title = "Youtuber",
+    Description = "MIMI hubs ",
+    Callback = function()
+        setclipboard("https://www.youtube.com/channel/UC0H_PyvrMCLQ5rjNJVUjFpg")
+    end
+})
+
+    Tabs.Main0:AddButton({
+    Title = "chưa có kênh 2",
+    Description = "TBoy Gamer",
+    Callback = function()
+        setclipboard(" ")
+    end
+})
+    
+    Tabs.Main1:AddButton({
+    Title="Redz Hub",
+    Description="redz beta",
+    Callback=function()
+            local Settings = {
+
+  JoinTeam = "Pirates"; -- Pirates/Marines
+
+  Translator = true; -- true/false
+
+}
+
+getgenv().BETA_VERSION = true
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tlredz/Scripts/refs/heads/main/main.luau"))(Settings)
+  end
+})
+
+Tabs.Main1:AddButton({
+    Title="GreenZ Hub",
+    Description="",
+    Callback=function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaAnarchist/GreenZ-Hub/refs/heads/main/KaitunDoughKing.lua"))()
+  end
+})
+
+Tabs.Main1:AddButton({
+    Title="MIMI Hub",
+    Description="xem có ấn được ko bản này do mình làm",
+    Callback=function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/yenhang870-ui/ha/refs/heads/main/fa"))()
+  end
+})
+
+Tabs.Main1:AddButton({
+    Title="GRAVITY Hub",
+    Description="NÊN CHỌN BẢN NÀY ĐI RAID NHIỀU BẢN KHÁC THẤY BỊ LỖI",
+    Callback=function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-GravityHub/BloxFruit/refs/heads/main/Main.lua"))()
+  end
+})
+
+Tabs.Main1:AddButton({
+    Title="DATTHG Hub v3",
+    Description="bản tiếng anh",
+    Callback=function()
+	  getgenv().Team = "Marines"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/DatThg/refs/heads/main/DatThgV3Eng"))()
+  end
+})
+
+Tabs.Main1:AddButton({
+    Title="TUANANH Hub",
+    Description="",
+    Callback=function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/AnhTuanDzai-Hub/TuanAnhIOS/refs/heads/main/TuanAnhIOS-Main.Lua"))()
+  end
+})
+
+Tabs.Main1:AddButton({
+    Title="TEDDY Hub",
+    Description="",
+    Callback=function()
+	  repeat wait() until game:IsLoaded() and game.Players.LocalPlayer 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Teddyseetink/Haidepzai/refs/heads/main/TeddyHub.lua"))()
+  end
+})
+
+Tabs.Main1:AddButton({
+    Title="OMG Hub",
+    Description="",
+    Callback=function()
+	   _G.Translate = true -- true/false
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/MainLoader.lua"))()
+
+  end
+})
+
+Tabs.Main1:AddButton({
+    Title="trẩu roblox Hub",
+    Description="",
+    Callback=function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/traurobloxdeptrai/traukhoaito/refs/heads/main/TrauRobloxRedZV2.lua"))()
+  end
+})
+
+Tabs.Main1:AddButton({
+    Title="MUKURO Hub",
+    Description="get key",
+    Callback=function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/xQuartyx/QuartyzScript/main/Loader.lua"))()
+
+  end
+})
+
+Tabs.Main1:AddButton({
+    Title="HIRU Hub",
+    Description="",
+    Callback=function()
+	  getgenv().Settings = {
+    JoinTeam = true,
+    Team = "Marines"-- Pirates or Marines
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/KiddoHiru/BloxFruits/main/Source.lua"))()
+  end
+})
+
+abs.Main1:AddButton({
+    Title="turbo Hub",
+    Description="no key",
+    Callback=function()
+	 loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/refs/heads/main/Main.lua"))()
+
+  end
+})
+
+abs.Main1:AddButton({
+    Title="w azure Hub",
+    Description="xem còn dùng được ko",
+    Callback=function()
+	 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/85e904ae1ff30824c1aa007fc7324f8f.lua"))()
+  end
+})
+
+abs.Main1:AddButton({
+    Title="vxeze Hub",
+    Description="",
+    Callback=function()
+	 loadstring(game:HttpGet("https://raw.githubusercontent.com/Dex-Bear/Vxezehub/refs/heads/main/VxezeHubMain"))()
+
+  end
+})
+
+abs.Main1:AddButton({
+    Title="Master Hub",
+    Description="bản mới ko lo bị ban",
+    Callback=function()
+	 loadstring(game:HttpGet("https://raw.githubusercontent.com/obfmoonsec/Masterhub/refs/heads/main/obf"))()
+  end
+})
+
+abs.Main1:AddButton({
+    Title="datthg Hub",
+    Description="bản v2",
+    Callback=function()
+	 getgenv().Team = "Marines"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/DatThg/refs/heads/main/DatThgV2"))()
+  end
+})
+
+abs.Main1:AddButton({
+    Title="Maru Hub",
+    Description="Maru copy",
+    Callback=function()getgenv().Team = "Marines"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/KimP/refs/heads/main/MaruHub"))()
+  end
+})
+
+
+
+abs.Main5:AddButton({
+    Title="turbo Hub fix lag",
+    Description="",
+    Callback=function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/main/FixLag.lua"))()
+
+  end
+})
+
+abs.Main1:AddButton({
+    Title="Blue x Hub",
+    Description="bản cũ",
+    Callback=function()
+          loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-BlueX/BlueX-Hub/refs/heads/main/Main.lua"))()
+  end
+})
+
+abs.Main1:AddButton({
+    Title="blue x Hub",
+    Description="bản mới",
+    Callback=function()
+	 loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-BlueX/BlueX-Hub/refs/heads/main/Main.lua"))()
+
+  end
+})
+
+abs.Main2:AddButton({
+    Title="Turbo Hub",
+    Description="nhặt trái",
+    Callback=function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/TurboLite/Script/refs/heads/main/TraiCay.lua"))()
+  end
+})
+
+abs.Main1:AddButton({
+    Title="Bapred Hub",
+    Description="xem còn dùng được ko",
+    Callback=function()
+	 loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/BapRed/main/BapRedHub"))()
+
+  end
+})
+
+abs.Main1:AddButton({
+    Title="MUKURO Hub",
+    Description="get key",
+    Callback=function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/xQuartyx/QuartyzScript/main/Loader.lua"))()
+
+  end
+})
+
